@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+
+<body>
+
+    <h1>Contact Us</h1>
+
+    <form>
+
+        <!-- Name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <br><br>
+
+        <!-- Subject -->
+        <label for="subject">Subject:</label>
+        <select id="subject" name="subject" required>
+            <option value="">Select a subject</option>
+            <option value="general">General Inquiry</option>
+            <option value="project">Project</option>
+            <option value="feedback">Feedback</option>
+        </select>
+
+        <br><br>
+
+        <!-- Preferred Contact Time -->
+        <p>Preferred Contact Time:</p>
+
+        <input type="radio" id="morning" name="contact-time" value="morning" required>
+        <label for="morning">Morning</label>
+
+        <input type="radio" id="evening" name="contact-time" value="evening">
+        <label for="evening">Evening</label>
+
+        <br><br>
+
+        <!-- Checkbox -->
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <label for="subscribe">Subscribe to updates</label>
+
+        <br><br>
+
+        <!-- Message -->
+        <label for="message">Message:</label>
+        <br>
+
+        <textarea id="message" name="message" rows="5" cols="40"
+                  required></textarea>
+
+        <br><br>
+
+        <!-- Submit -->
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+
+</html>
