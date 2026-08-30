@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 4 - Contact Us Form</title>
+  
+  <!-- Add this line inside <head> -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main>
+    <h1>Contact Us</h1>
+    
+    <form action="#" method="POST">
+      <div class="form-group">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="name@example.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <select id="subject" name="subject" required>
+          <option value="">-- Select an option --</option>
+          <option value="general">General Inquiry</option>
+          <option value="support">Technical Support</option>
+          <option value="feedback">Feedback</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Preferred Contact Time</label>
+        <div class="radio-group">
+          <input type="radio" id="morning" name="contact_time" value="morning">
+          <label for="morning" class="inline-label">Morning</label>
+          
+          <input type="radio" id="afternoon" name="contact_time" value="afternoon">
+          <label for="afternoon" class="inline-label">Afternoon</label>
+        </div>
+      </div>
+
+      <div class="form-group checkbox-group">
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+        <label for="subscribe" class="inline-label">Subscribe to newsletter updates</label>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+  </main>
+
+</body>
+</html>
